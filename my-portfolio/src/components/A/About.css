@@ -1,0 +1,176 @@
+/* General Section Styling */
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 30px; /* Padding for both desktop and mobile */
+    background-color: #f5f5f5;
+  }
+  
+  /* Container Styling */
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    gap: 50px;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+  }
+  
+  /* Left Image Section (Pulse Animation for Image Only) */
+  .image-container {
+    position: relative;
+    width: 340px; /* Adjust width for mobile */
+    height: 460px; /* Adjust height for mobile */
+    border: 10px solid #f0c808;
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Image Styling (Pulse Animation Targeted Only to Image) */
+  .profile-image {
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+    border-radius: 0%;
+    box-shadow: 0 15px 30px #f0c808;
+    transform: translateX(125px);
+    animation: pulseEffect 2s infinite ease-in-out; /* Pulse effect on image */
+  }
+  
+  /* Pulse Animation for Image */
+  @keyframes pulseEffect {
+    0% {
+      transform: translateX(125px) scale(1);
+    }
+    50% {
+      transform: translateX(125px) scale(1.05);
+    }
+    100% {
+      transform: translateX(125px) scale(1);
+    }
+  }
+  
+  /* Right Text Section with Fade-In Animation */
+  .text-container {
+    max-width: 650px;
+    text-align: left;
+    margin-left: 50px;
+    animation: fadeInText 2s ease-in 0.5s; /* Fade-in animation for text */
+  }
+  
+  /* Title Styling */
+  .about-title {
+    font-size: 45px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  /* Description Styling */
+  .about-description {
+    font-size: 20px;
+    color: #000000;
+    line-height: 1.7;
+    text-align: justify;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
+  }
+  
+  /* Resume Button Styling with Hover Effect */
+  .resume-button {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #f0c808;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 25px;
+  }
+  
+  .resume-button:hover {
+    background-color: #d1a406;
+    transform: scale(1.1);
+  }
+  
+  .resume-button:active {
+    background-color: #b89205;
+  }
+  
+  /* Fade-In Animation for Text Elements */
+  @keyframes fadeInText {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    /* Adjusting container layout for mobile */
+    .about-container {
+      flex-direction: column;
+      text-align: center;
+      gap: 40px; /* Reduced gap for a more compact layout */
+    }
+  
+    /* Image Section */
+    .image-container {
+      width: 200px; /* Adjust image container size */
+      height: 270px; /* Adjust image container size */
+      margin-right: 18%;
+      transform: translateX(1px);
+    }
+  
+    .profile-image {
+      width: 100%; /* Ensure image fully covers the container */
+      height: 110%;
+      margin-left: -19%;
+      margin-right: 10px;
+      transform: translateX(1px);
+    }
+  
+    .text-container {
+        max-width: 100%; /* Make text container take up more space */
+        padding: 0 20px; /* Add some horizontal padding for better spacing */
+        text-align: center; /* Center the text inside the container */
+        margin-left: auto; /* Center the text container horizontally */
+        margin-right: auto; /* Center the text container horizontally */
+      }
+    
+      .about-title {
+        font-size: 35px; /* Smaller title for mobile */
+        margin-bottom: 10px; /* Less space between title and description */
+        text-align: center; /* Center the title */
+      }
+    
+      .about-description {
+        font-size: 18px; /* Adjust text size for mobile */
+        line-height: 1.6;
+        text-align: center; /* Center the description text */
+        margin-bottom: 20px;
+        font-display: 'Roboto', sans-serif;
+        margin-left: auto; /* Center the description horizontally */
+        margin-right: auto; /* Center the description horizontally */
+      }
+    
+      .resume-button {
+        padding: 12px 30px; /* Adjust padding for mobile view */
+      }
+    }

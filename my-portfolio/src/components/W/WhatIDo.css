@@ -1,0 +1,169 @@
+/* CSS Styling */
+.what-i-do-container {
+    background: linear-gradient(to bottom, #f1e8e8, #ffffff);
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    color: #4a3939;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeInTitle 1.2s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #ff6347;
+    margin: 10px auto 0;
+    border-radius: 2px;
+    animation: fadeInUnderline 1.5s ease-in-out;
+}
+
+.what-i-do-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.left-side, .right-side {
+    width: 45%;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 40px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    opacity: 0;
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.in-view {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.left-side h3, .right-side h3 {
+    font-size: 2rem;
+    color: #4a3939;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+.left-side h3::after, .right-side h3::after {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #ff6347;
+    margin: 10px auto 0;
+    border-radius: 1px;
+}
+
+.left-side p, .right-side p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+.icons-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tech-icon:hover {
+    transform: scale(1.2);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Fade-in animation for title */
+@keyframes fadeInTitle {
+    0% {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Fade-in underline animation */
+@keyframes fadeInUnderline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 60px;
+    }
+}
+
+/* Mobile responsive view */
+@media (max-width: 768px) {
+    .what-i-do-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side, .right-side {
+        width: 90%;
+        margin-bottom: 20px;
+        opacity: 1;
+        transform: scale(1);
+        transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .section-title {
+        font-size: 2.2rem;
+        animation: fadeInTitle 1.5s ease-in-out;
+    }
+
+    /* Stagger animation for content */
+    .left-side.in-view, .right-side.in-view {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Smaller screens view */
+@media (max-width: 480px) {
+    .left-side h3, .right-side h3 {
+        font-size: 1.8rem;
+    }
+
+    .left-side p, .right-side p {
+        font-size: 1rem;
+    }
+
+    .tech-icon {
+        width: 40px;
+        height: 40px;
+    }
+}

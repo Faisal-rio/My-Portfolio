@@ -1,0 +1,306 @@
+/* Global container styling */
+.loader-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d1117; /* Sleek dark background */
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  padding: 0 20px; /* Added some padding for smaller screens */
+  position: relative; /* Added for positioning background animation */
+}
+
+/* Particle background */
+.loader-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://cdn.pixabay.com/photo/2018/04/19/10/44/silhouette-3334410_960_720.jpg') center/cover no-repeat; /* Use an image or particles */
+  opacity: 0.1;
+  animation: backgroundMove 10s infinite linear;
+  z-index: -1;
+}
+
+/* Particle Movement Animation */
+@keyframes backgroundMove {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+/* Buffering loader */
+.buffering-loader {
+  position: relative;
+  width: 130px; /* Larger, dynamic size */
+  height: 130px; /* Larger, dynamic size */
+  border-radius: 50%; /* Round loader container */
+  background: radial-gradient(circle, #1c1f26, #0d1117);
+  box-shadow: 0 0 20px rgba(77, 166, 255, 0.6), inset 0 0 15px rgba(77, 166, 255, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buffering-dot {
+  position: absolute;
+  width: 18px; /* Sleek, prominent dots */
+  height: 18px;
+  background-color: #4da6ff;
+  border-radius: 50%;
+  animation: buffering-dots 1.8s ease-in-out infinite;
+}
+
+.buffering-dot:nth-child(1) {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0s;
+}
+
+.buffering-dot:nth-child(2) {
+  top: 20%;
+  left: 80%;
+  animation-delay: 0.2s;
+}
+
+.buffering-dot:nth-child(3) {
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  animation-delay: 0.4s;
+}
+
+.buffering-dot:nth-child(4) {
+  top: 80%;
+  left: 80%;
+  animation-delay: 0.6s;
+}
+
+.buffering-dot:nth-child(5) {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  animation-delay: 0.8s;
+}
+
+.buffering-dot:nth-child(6) {
+  top: 80%;
+  left: 20%;
+  animation-delay: 1s;
+}
+
+.buffering-dot:nth-child(7) {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  animation-delay: 1.2s;
+}
+
+.buffering-dot:nth-child(8) {
+  top: 20%;
+  left: 20%;
+  animation-delay: 1.4s;
+}
+
+/* Animations for buffering loader */
+@keyframes buffering-dots {
+  0%, 100% {
+    transform: scale(1);
+    background-color: #4da6ff;
+  }
+  50% {
+    transform: scale(1.5);
+    background-color: #ffffff;
+  }
+}
+
+/* Loading text animation */
+.loading-text {
+  margin-top: 30px; /* Proper spacing */
+  font-size: 2.5rem; /* Eye-catching size */
+  color: #ffffff;
+  font-weight: 600;
+  letter-spacing: 4px; /* Improved spacing */
+  text-transform: uppercase;
+  display: flex;
+  gap: 8px; /* Dynamic gap between characters */
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(77, 166, 255, 0.9);
+  animation: glowing-text 3s infinite alternate;
+}
+
+@keyframes glowing-text {
+  0% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(77, 166, 255, 0.9);
+  }
+  50% {
+    text-shadow: 0 0 30px rgba(255, 255, 255, 0.9), 0 0 60px rgba(77, 166, 255, 1);
+  }
+  100% {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 0 0 30px rgba(77, 166, 255, 0.9);
+  }
+}
+
+.loading-text span {
+  opacity: 0;
+  animation: fade-in 2s infinite;
+}
+
+.loading-text span:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.loading-text span:nth-child(2) {
+  animation-delay: 0.1s;
+}
+
+.loading-text span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+
+.loading-text span:nth-child(4) {
+  animation-delay: 0.3s;
+}
+
+.loading-text span:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+.loading-text span:nth-child(6) {
+  animation-delay: 0.5s;
+}
+
+.loading-text span:nth-child(7) {
+  animation-delay: 0.6s;
+}
+
+.loading-text span:nth-child(8) {
+  animation-delay: 0.7s;
+}
+
+/* Fade-in animation for text */
+@keyframes fade-in {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Welcome screen */
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #0d1117;
+  animation: fade-background 3s ease-in-out infinite alternate;
+}
+
+@keyframes fade-background {
+  0% {
+    background-color: #0d1117;
+  }
+  100% {
+    background-color: #1c1f26;
+  }
+}
+
+.welcome-text {
+  font-size: 5rem; /* Attention-grabbing size */
+  font-weight: 800;
+  color: #ffffff;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.9), 0 0 40px rgba(77, 166, 255, 0.7);
+  text-transform: uppercase;
+  letter-spacing: 6px; /* Refined spacing */
+  animation: slide-in 2s ease-in-out;
+}
+
+/* Welcome text slide-in animation */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  /* Global container styling for mobile */
+  .loader-container {
+    padding: 0; /* Remove excess padding to prevent scrolling */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh; /* Ensure it fills the screen */
+    z-index: 9999;
+  }
+
+  /* Buffering loader for mobile */
+  .buffering-loader {
+    width: 90px;
+    height: 90px;
+  }
+
+  .buffering-dot {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Loading text for mobile */
+  .loading-text {
+    font-size: 1.5rem;
+    margin-top: 40px; /* Gap of 40px between loader and text */
+    gap: 4px;
+  }
+
+  /* Welcome container for mobile */
+  .welcome-container {
+    padding: 20px;
+  }
+
+  .welcome-text {
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Further adjustments for extra small screens */
+  .buffering-loader {
+    width: 80px;
+    height: 80px;
+  }
+
+  .buffering-dot {
+    width: 8px;
+    height: 8px;
+  }
+
+  .loading-text {
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    gap: 3px;
+    margin-top: 30px; /* Gap of 60px between loader and text */
+  }
+
+  .welcome-text {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+}
