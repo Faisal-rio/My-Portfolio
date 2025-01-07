@@ -41,7 +41,7 @@ const About = () => {
         <div className="image-container">
           <div className="yellow-border">
             <img
-              src="public/images/faisalsf.jpg" // Correct path for the image in the public folder
+              src="public/images/faisalsf.png" // Correct path for the image in the public folder
               alt="Mohammed Fasil"
               className="profile-image"
             />
