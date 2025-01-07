@@ -71,7 +71,7 @@
         <div className="right-section">
           <div className="photo-frame">
             <img
-              src="public/images/WhatsApp profile.jpg"
+              src="src/assets/images/WhatsApp profile.jpg"
               alt="Mohammed Fasil"
               className="profile-photo"
             />

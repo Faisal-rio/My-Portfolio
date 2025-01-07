@@ -39,7 +39,7 @@ const About = () => {
         <div className="image-container">
           <div className="yellow-border">
             <img
-              src="public/images/Faisal.sfT.jpg" // Replace with your image URL
+              src="src/assets/images/Faisal.sfT.jpg" // Replace with your image URL
               alt="Profile"
               className="profile-image"
             />
