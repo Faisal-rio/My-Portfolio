@@ -91,7 +91,7 @@ This portfolio is built with **React.js** and utilizes a **mobile-first** design
 This portfolio represents not just the projects I've worked on, but also the journey of continuous learning and growth in the field of web development. I aim to keep challenging myself, and I’m excited to work on projects that push the boundaries of what’s possible with web technologies.
 
 Thank you for visiting my portfolio! I hope you find it engaging and informative. Feel free to reach out if you'd like to collaborate, have any questions, or simply want to chat about the latest in web development!
-
+## just click the[Netlify](https://afaisal-rio-portfolio.netlify.app/).
 ---
 
 ### ✨ Thank you for exploring my work! ✨
