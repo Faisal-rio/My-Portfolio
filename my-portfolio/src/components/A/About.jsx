@@ -6,29 +6,31 @@ const About = () => {
     // Function to handle scroll event and add 'in-view' class
     const handleScroll = () => {
       const aboutImage = document.querySelector(".profile-image");
-      const aboutDescription = document.querySelectorAll(".about-description");
+      const aboutDescriptions = document.querySelectorAll(".about-description");
 
-      // Check if elements are in the viewport
-      if (aboutImage && aboutDescription.length) {
+      if (aboutImage) {
         const imageInView =
           aboutImage.getBoundingClientRect().top < window.innerHeight;
-        const descriptionInView = Array.from(aboutDescription).every(
-          (desc) => desc.getBoundingClientRect().top < window.innerHeight
-        );
-
         if (imageInView) {
           aboutImage.classList.add("in-view");
         }
-        if (descriptionInView) {
-          aboutDescription.forEach((desc) => desc.classList.add("in-view"));
-        }
+      }
+
+      if (aboutDescriptions.length) {
+        aboutDescriptions.forEach((desc) => {
+          const descriptionInView =
+            desc.getBoundingClientRect().top < window.innerHeight;
+          if (descriptionInView) {
+            desc.classList.add("in-view");
+          }
+        });
       }
     };
 
     // Add scroll event listener
     window.addEventListener("scroll", handleScroll);
 
-    // Cleanup event listener
+    // Cleanup event listener on component unmount
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -39,8 +41,8 @@ const About = () => {
         <div className="image-container">
           <div className="yellow-border">
             <img
-              src="src/assets/images/Faisal.sfT.jpg" // Replace with your image URL
-              alt="Profile"
+              src="public/images/Faisal.sfT.jpg" // Correct path for the image in the public folder
+              alt="Mohammed Fasil"
               className="profile-image"
             />
           </div>
