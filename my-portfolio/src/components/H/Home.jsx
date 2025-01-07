@@ -70,7 +70,7 @@ const Home = () => {
       <div className="right-section">
         <div className="photo-frame">
           <img
-            src="/public/images/WhatsApp profile.jpg"
+            src="/public/images/fasil.jpg"
             alt="Mohammed Fasil"
             className="profile-photo"
           />
