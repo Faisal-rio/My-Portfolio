@@ -13,8 +13,8 @@ const ProjectsAndSkills = () => {
     {
       title: "Portfolio Website",
       description: "Interactive Portfolio Website: Displaying My Development Projects and Skills in a Mobile-Optimized Design.",
-      githubLink: "https://github.com/Faisal-rio/portfolio-website",
-      netlifyLink: "https://portfolio-website.netlify.app",
+      githubLink: "https://github.com/Faisal-rio/My-Portfolio",
+      netlifyLink: "https://afaisal-rio-portfolio.netlify.app/",
       icons: ["html", "css", "javascript", "react"],
     },
     {
