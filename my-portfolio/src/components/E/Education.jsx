@@ -88,7 +88,7 @@ const Education = () => {
       </div>
       <div className="closing-statement">
         <p>Thank you for visiting my portfolio!</p>
-        <span className="smile-emoji">😊</span>
+        <span className="smile-emoji">😊🤝</span>
       </div>
     </div>
   );

@@ -26,7 +26,7 @@ const ProjectsAndSkills = () => {
     },
     {
       title: "Blog Website",
-      description: "A weather forecast app that uses a public API to display live weather data.",
+      description: "MERN Stack Blog Showcasing Technical Articles Across Various Domains",
       githubLink: "https://github.com/Faisal-rio/Guvi-Blog-Clone",
       netlifyLink: "https://sampleguviclone.netlify.app/",
       icons: ["html", "css", "javascript"],

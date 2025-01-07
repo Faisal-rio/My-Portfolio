@@ -4,7 +4,10 @@
     justify-content: center;
     align-items: center;
     padding: 100px 30px; /* Padding for both desktop and mobile */
-    background-color: #f5f5f5;
+    background: linear-gradient(135deg, #142850 0%, #142850 50%, #142850 100%);
+    box-shadow: 0 4px 15px rgba(255, 255, 255, 0.676);
+    position: relative;
+
   }
   
   /* Container Styling */
@@ -23,12 +26,12 @@
     position: relative;
     width: 340px; /* Adjust width for mobile */
     height: 460px; /* Adjust height for mobile */
-    border: 10px solid #f0c808;
+    border: 10px solid #ffffff;
     border-radius: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 1px 30px rgba(253, 253, 253, 0.314);
   }
   
   /* Image Styling (Pulse Animation Targeted Only to Image) */
@@ -37,7 +40,7 @@
     height: 105%;
     object-fit: cover;
     border-radius: 0%;
-    box-shadow: 0 15px 30px #f0c808;
+    box-shadow: 0 15px 30px #3d3f56;
     transform: translateX(125px);
     animation: pulseEffect 2s infinite ease-in-out; /* Pulse effect on image */
   }
@@ -67,7 +70,7 @@
   .about-title {
     font-size: 45px;
     font-weight: 700;
-    color: #333;
+    color: #ffffff;
     margin-bottom: 15px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -77,7 +80,7 @@
   /* Description Styling */
   .about-description {
     font-size: 20px;
-    color: #000000;
+    color: #ffffff;
     line-height: 1.7;
     text-align: justify;
     margin-bottom: 20px;
@@ -89,8 +92,8 @@
   .resume-button {
     display: inline-block;
     padding: 14px 40px;
-    background-color: #f0c808;
-    color: white;
+    background: linear-gradient(135deg, #ff6b6b, #ffc93c);
+    color: rgb(2, 18, 100);
     font-size: 18px;
     font-weight: bold;
     text-transform: uppercase;
@@ -103,12 +106,12 @@
   }
   
   .resume-button:hover {
-    background-color: #d1a406;
+    background: linear-gradient(135deg, #ff6b6b, #ffc93c);
     transform: scale(1.1);
   }
   
   .resume-button:active {
-    background-color: #b89205;
+    background: linear-gradient(135deg, #ff6b6b, #ffc93c);
   }
   
   /* Fade-In Animation for Text Elements */

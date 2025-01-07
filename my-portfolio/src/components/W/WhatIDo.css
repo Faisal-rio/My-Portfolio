@@ -1,11 +1,10 @@
 /* CSS Styling */
 .what-i-do-container {
-    background: linear-gradient(to bottom, #f1e8e8, #ffffff);
-    padding: 60px 20px;
+    background: linear-gradient(135deg, #142850 0%, #142850 50%, #142850 100%);    padding: 60px 20px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
-    border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 0px;
+    box-shadow: 0 4px 15px rgb(255, 255, 255);
     position: relative;
     overflow: hidden;
 }
@@ -13,7 +12,7 @@
 .section-title {
     font-size: 2.8rem;
     font-weight: bold;
-    color: #4a3939;
+    color: #ffffff;
     margin-bottom: 40px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -27,7 +26,7 @@
     display: block;
     width: 60px;
     height: 4px;
-    background: #ff6347;
+    background: #ffffff;
     margin: 10px auto 0;
     border-radius: 2px;
     animation: fadeInUnderline 1.5s ease-in-out;
@@ -44,10 +43,10 @@
 .left-side, .right-side {
     width: 45%;
     text-align: center;
-    background: #ffffff;
+    animation: fadeInTitle 1.2s ease-in-out;
     border-radius: 12px;
     padding: 40px;
-    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 20px rgba(255, 255, 255, 0.1);
     transform: scale(0.9);
     opacity: 0;
     transition: opacity 1s ease, transform 1s ease;
@@ -60,7 +59,7 @@
 
 .left-side h3, .right-side h3 {
     font-size: 2rem;
-    color: #4a3939;
+    color: #ffffff;
     margin-bottom: 20px;
     text-transform: capitalize;
     letter-spacing: 1px;
@@ -72,14 +71,14 @@
     display: block;
     width: 40px;
     height: 2px;
-    background: #ff6347;
+    background: #ffffff;
     margin: 10px auto 0;
     border-radius: 1px;
 }
 
 .left-side p, .right-side p {
     font-size: 1.1rem;
-    color: #555;
+    color: #ffffff;
     line-height: 1.8;
     margin-bottom: 20px;
     padding: 0 10px;

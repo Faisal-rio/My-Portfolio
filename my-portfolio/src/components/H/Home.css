@@ -9,7 +9,7 @@
 .home-container {
     display: flex;
     min-height: 100vh;
-    background: linear-gradient(135deg, #edf2fb 0%, #ffffff 50%, #ffffff 100%);
+    background: linear-gradient(135deg, #142850 0%, #142850 50%, #142850 100%);
     padding: 2rem;
     position: relative;
     overflow: hidden; /* Prevent overflow */
@@ -32,7 +32,7 @@
     font-size: 3.2rem; /* Reduced size for large screens */
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
-    background: linear-gradient(90deg, #142850, #27496d, #0c7b93);
+    background: linear-gradient(90deg, #fdfdfd, #ffffff, #ffffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 1.5rem;
@@ -50,8 +50,8 @@
     max-width: 700px;
     font-family: 'Open Sans', sans-serif;
     padding-left: 1rem;
-    border-left: 4px solid #0c7b93;
-    animation: fadeInUp 1.5s ease-out, changeColor 8s linear infinite;
+    border-left: 4px solid #f9f9f9;
+
     word-wrap: break-word; /* Prevent overflow */
 }
 
@@ -72,7 +72,7 @@
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 25px 50px rgb(249, 249, 249);
     animation: pulse 3s infinite;
     border: 8px solid #ffffff;
     background: linear-gradient(135deg, #142850, #0c7b93);
@@ -105,7 +105,7 @@
     padding: 1rem;
     border-radius: 50%;
     background: linear-gradient(135deg, #0c7b93, #27496d);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 10px rgb(255, 255, 255);
     transition: all 0.3s ease, transform 0.3s ease;
     position: relative;
     cursor: pointer;

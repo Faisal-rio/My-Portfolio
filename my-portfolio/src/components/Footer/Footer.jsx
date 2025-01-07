@@ -72,6 +72,26 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Navigation Section */}
+        <div className="footer-navigation">
+          <nav className="footer-nav">
+            <ul>
+              <li>
+                <a href="#home" className="footer-nav-link">Home</a>
+              </li>
+              <li>
+                <a href="#about" className="footer-nav-link">About</a>
+              </li>
+              <li>
+                <a href="#projects" className="footer-nav-link">Projects</a>
+              </li>
+              <li>
+                <a href="#education" className="footer-nav-link">Education</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
         {/* Footer Bottom */}
         <div className="footer-bottom">
           <p>© 2025 Fasil's Portfolio. All Rights Reserved.</p>
