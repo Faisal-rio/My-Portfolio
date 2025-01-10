@@ -69,7 +69,7 @@ const About = () => {
 
           {/* Resume View Button */}
           <a
-            href="https://drive.google.com/file/d/10oqTDw7ZAlm-CZB5v_wqhmqyXqbiuZSw/view"
+            href="https://drive.google.com/file/d/1OZhT3HTkCoAnBoZTEI0S_gktbK-2tkOQ/view"
             className="resume-button"
             target="_blank"
             rel="noopener noreferrer"
